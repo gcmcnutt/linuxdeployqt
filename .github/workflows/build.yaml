@@ -32,4 +32,5 @@ jobs:
         if: ${{ github.ref == 'refs/heads/master' }}
         run: |
           wget -c https://github.com/probonopd/uploadtool/raw/master/upload.sh
+          ls
           bash ./upload.sh ./linuxdeployqt-*.AppImage*
